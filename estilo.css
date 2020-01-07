@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+q.continuacao::before {
+	content: '"[...] ';
+}
+
+q.continuacao::after {
+	content: '"';
+}
+
+p > cite > time::before {
+	content: " (";
+}
+
+p > cite > time::after {
+	content: ")";
+}
+
+p > cite.parenteses {
+	text-transform: uppercase;
+}
+
+p > cite.parenteses::before {
+	content: "(";
+}
+
+p > cite.parenteses::after {
+	content: ")";
+}
+
+p > cite.parenteses > time::before {
+	content: ', ';
+}
+
+p > cite.parenteses > time::after {
+	content: none;
+}
